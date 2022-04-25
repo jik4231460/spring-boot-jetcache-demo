@@ -1,0 +1,28 @@
+jetcache:
+  statIntervalMinutes: 15
+  areaInCacheName: false
+  hiddenPackages: com.alibaba
+
+  local:
+    default:
+      type: linkedhashmap
+      limit: 100
+      keyConvertor: fastjson
+      expireAfterWriteInMillis: 100000
+    otherArea:
+      type: linkedhashmap
+      limit: 100
+      keyConvertor: none
+      expireAfterWriterInMillis: 100000
+  remote:
+    default:
+      type: redis
+      keyConvertor: fastjson
+      valueEncoder: java
+      valueDecoder: java
+      poolConfig:
+        minIdle: 5
+        maxIdle: 20
+        maxTotal: 50
+      host: 127.0.0.1
+      port: 6379

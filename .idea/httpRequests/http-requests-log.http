@@ -1,0 +1,24 @@
+GET http://localhost:8080/userCache/setRandomUser/GetUserNameReq=1
+
+<> 2022-04-25T125042.404.json
+
+###
+
+GET http://localhost:8080/userCache/setRandomUser/GetUserNameReq
+
+<> 2022-04-25T125015.404.json
+
+###
+
+GET http://localhost:8080/userCache/setRandomUser
+
+<> 2022-04-25T124946.200.json
+
+###
+
+GET http://localhost:8080/userCache/setRandomUser
+
+<> 2022-04-25T124932.200.json
+
+###
+
